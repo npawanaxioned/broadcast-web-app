@@ -103,13 +103,87 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
+
+.container{
+  background-color: #0D1E2D;
+  color: #fff;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper{
+  max-width: 1360px;
+  width: 98%;
+  padding: 16px 1%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #111D39;
+}
 
+h1 > a{
+  color: #fff;
+  font-size: 14px;
+}
 
+.logo{
+  font-weight: 700;
+  text-transform: none;
+}
 
+h1 > a > span{
+  text-transform: uppercase;
+}
 
+.menu{
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+/* Nav Icon */
+.nav-icon {
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+}
+
+.nav-icon span {
+  width: 12px;
+  height: 2px;
+  border-radius: 4px;
+  margin: 2px 0;
+  display: block;
+  background: #B1B6B9;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 6px;
+  transform-origin: left center;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 12px;
+  transform-origin: left center;
+}
+
+.nav-link-wrapper{
+  display: none;
+}
+
+.nav-link-wrapper a {
+  color: #fff;
+}
 
 
 /*=================================
@@ -120,9 +194,39 @@ li {
   main styling starts here
 =================================*/
 
+.broadcast-container .wrapper{
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://dummyimage.com/1350x650/000/303030");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
 
+.broadcast-container .heading-two{
+  font-size: 40px;
+  font-weight: 600;
+}
 
+.broadcast-container p{
+  max-width: 650px;
+  margin-top: 50px;
+}
 
+.broadcast-container .wrapper > div {
+  padding: 22px 2.37%;
+  margin-top: 46px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.broadcast-container div > a{
+  font-weight: 600;
+}
 
 
 
