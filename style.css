@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,22 +98,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
-input[type='button'],
-input[type='submit'],
+input[type="button"],
+input[type="submit"],
 button {
   cursor: pointer;
 }
@@ -50,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -66,8 +155,13 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -78,8 +172,13 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
 
 /*for all*/
 body {
@@ -87,9 +186,9 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
@@ -100,54 +199,55 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 86%;
   margin: 0 auto;
 }
 
-.container{
-  background-color: #0D1E2D;
+.container {
+  /* background-color: #4d779b; */
   color: #fff;
 }
 
 /*=================================
   Header styling starts here
 =================================*/
-header .wrapper{
-  max-width: 1360px;
+header .wrapper {
+  max-width: 100%;
   width: 98%;
   padding: 16px 1%;
   display: flex;
   justify-content: space-between;
-  background-color: #111D39;
+  background-color: #111d39;
 }
 
-h1 > a{
+.logo-header > a {
   color: #fff;
   font-size: 14px;
 }
 
-.logo{
+.logo {
   font-weight: 700;
   text-transform: none;
 }
 
-h1 > a > span{
+.uppercase-word {
   text-transform: uppercase;
 }
 
-.menu{
+.menu {
   width: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 8px;
+  cursor: pointer;
 }
 
 /* Nav Icon */
 .nav-icon {
   cursor: pointer;
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .nav-icon span {
@@ -156,7 +256,7 @@ h1 > a > span{
   border-radius: 4px;
   margin: 2px 0;
   display: block;
-  background: #B1B6B9;
+  background: #b1b6b9;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -177,7 +277,7 @@ h1 > a > span{
   transform-origin: left center;
 }
 
-.nav-link-wrapper{
+.nav-link-wrapper {
   display: none;
 }
 
@@ -185,17 +285,20 @@ h1 > a > span{
   color: #fff;
 }
 
-
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
 =================================*/
 
-.broadcast-container .wrapper{
+/*=================================
+  broadcast section styling starts here
+=================================*/
+.broadcast-container .wrapper {
   width: 100%;
+  max-width: 100%;
   height: 650px;
   display: flex;
   flex-direction: column;
@@ -207,12 +310,12 @@ h1 > a > span{
   text-align: center;
 }
 
-.broadcast-container .heading-two{
+.broadcast-container .heading-two {
   font-size: 40px;
   font-weight: 600;
 }
 
-.broadcast-container p{
+.broadcast-container p {
   max-width: 650px;
   margin-top: 50px;
 }
@@ -222,35 +325,217 @@ h1 > a > span{
   margin-top: 46px;
   border: 1px solid;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.broadcast-container div > a{
+/*========================================
+  broadcast section styling ends here
+===========================================*/
+
+/*========================================
+  image section 1 styling starts here
+==========================================*/
+
+.img-section-container-1 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c212f;
+  padding: 100px 0;
+}
+
+.heading-three {
+  font-size: 28px;
   font-weight: 600;
 }
 
+.heading-three + p {
+  color: #868a87;
+}
 
+.img-section-container-1 p {
+  margin-top: 38px;
+}
 
+.img-section-container-1 .img-container {
+  margin-top: 60px;
+  display: flex;
+  gap: 3.5%;
+}
 
+.img-section-container-1 .img-caption {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #253640;
+}
+
+/*=================================
+  image section 1 styling ends here
+====================================*/
+
+/*========================================
+  image section 2 styling starts here
+==========================================*/
+
+.img-section-container-2 .wrapper {
+  background-color: #172631;
+  padding: 100px 0;
+}
+
+.img-section-container-2 p {
+  margin-top: 38px;
+}
+
+.button-img-container {
+  display: flex;
+  /* gap: 0.025%; */
+  gap: 30px;
+  margin-top: 62px;
+}
+
+.button-container {
+  width: 20%;
+}
+
+.button-container > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-container > ul li a {
+  width: 76%;
+  padding: 10px 12%;
+  background-color: #26343a;
+  white-space: nowrap;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.button-container .active-btn {
+  background-color: #9d12bc;
+}
+
+.img-section-container-2 .img-container {
+  width: 80%;
+}
+
+.img-section-container-2 .img-container > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 30px;
+}
+
+/*========================================
+  image section 2 styling ends here
+==========================================*/
+
+/*========================================
+  image section 3 styling starts here
+==========================================*/
+.img-section-container-3 .wrapper {
+  text-align: center;
+  padding: 90px 0;
+  background-color: #131c22;
+}
+
+.img-section-container-3 p {
+  margin-top: 38px;
+}
+
+.img-section-container-3 .img-container {
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-section-container-3 .img-caption {
+  padding: 34px 26px;
+  text-align: center;
+  background-color: #253640;
+}
+
+/*========================================
+  image section 3 styling ends here
+==========================================*/
 /*=================================
   main styling ends here
 =================================*/
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
+footer .wrapper {
+  padding: 90px 0;
+  background-color: #020b13;
+}
 
+.footer-top-container .footer-nav-container {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.heading-four {
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 600;
+}
 
+.footer-nav-inner-container-1 > ul,
+.footer-nav-inner-container-2 > ul,
+.footer-nav-inner-container-3 > ul {
+  display: flex;
+  flex-direction: column;
+}
 
+.footer-nav-inner-container-1 > ul > li,
+.footer-nav-inner-container-2 > ul > li,
+.footer-nav-inner-container-3 > ul > li {
+  width: 350px;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  font-size: 14px;
+}
 
+.footer-nav-inner-container-1 > ul > li:last-child,
+.footer-nav-inner-container-2 > ul > li:last-child,
+.footer-nav-inner-container-3 > ul > li:last-child {
+  border-bottom: none;
+}
 
+.footer-bottom-container {
+  margin-top: 68px;
+  text-align: center;
+}
 
- /*=================================
+.social-icons-container {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 20px;
+}
+
+.copyright {
+  color: #3a3a37;
+  font-size: 13px;
+}
+
+.bold {
+  color: #abbab7;
+  font-weight: 600;
+}
+
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
-}  
+}
