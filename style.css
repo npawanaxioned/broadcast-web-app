@@ -451,6 +451,10 @@ header .wrapper {
   justify-content: space-evenly;
 }
 
+.img-section-container-3 .img-container > li{
+  width: 30%;
+}
+
 .img-section-container-3 .img-caption {
   padding: 34px 26px;
   background-color: #253640;
